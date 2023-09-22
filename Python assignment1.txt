@@ -1,0 +1,103 @@
+Q1.  What are components of a computer ?
+ans: .CPU
+     .RAM
+     .ROM
+     .Hard disk
+     .ALU
+     .Monitor
+     .Keyboard
+Q2.  Which CPU are you using in you laptop / mobile / PC ?
+ans: Intel i5
+Q3.  What is size of RAM in your PC ?
+ans: 12Gb
+Q4.  Read Python documentation from
+     https://docs.python.org/3/tutorial/index.html
+ans: done!
+Q5.  What are different implementations of Python ? Which implementation we are using ?
+ans: We are using Cpython ,there are some other implementations of the Python language too The only implementations that are known to be compatible 
+     with a given version of the language are IronPython, Jython and PyPy.
+Q6.  Who created python ? in which year ? where ?
+ans: Guido van Rossum created Python in 1991 in The Netherlands.
+Q7.  What is PVM ?
+ans: PVM is Python Virtual Machine.
+Q8.  Python is platform independent or not ? Which platforms python can run ?
+ans: Python is platform independent , python supports any operating system
+     and supports many H/W platforms.
+Q9.  Why python is platform independent ? What makes it platform independent ?
+ans: Python is a platform-independent language.
+     This means that Python code can run on different platforms such as Windows, Linux, and macOS without the need for modification. 
+     Python programs are platform independent because they can be run on different platforms using an interpreter built specifically for that platform.
+     Python is an interpreted language, and its interpreter is available for many platforms
+Q10. WAP to Print "Hello IACSD" and write comment describing author of the program and date created
+ans: print("Hello IACSD")
+     """
+      this code is created by - Vaishnavi and Disha on 18/9/2023
+     """
+Q11. Find working of various functions (min 7) from math library of python which is provided as standard library. 
+     https://docs.python.org/3/library/math.html
+     You can also try it yourself.
+     Ex. 
+     import math
+     print(math.factorial(4))
+     print(math.sin(90))
+ans: math.comb(n, k)
+     math.ceil(x)
+     math.copysign(x, y)
+     math.fabs(x)
+     math.factorial(n)
+     math.floor(x)
+     math.fmod(x, y)
+     math.gcd(*integers)
+Q12. Open spyder IDE and create a python program (.py file) to print Hello world!. Run the program and check the put on console.
+ans: output of the following program :
+     print("Hello World!") is
+     Hello World!
+Q13.WAP using spyder IDE.  Import math library and print the gcd, lcm of two numbers.
+ans: import math
+     gcd=math.gcd((3,6))
+     print(gcd)
+     lcm=math.lcm((10,25))
+     print(lcm)
+Q14. WAP using spyder IDE. Use math library. Print number of options you have, when you are given 5 different characters and you need to select 3 of them without repeatitions. 
+     (find permutations)
+ans: import math
+     math.perm(5,3)
+Q15. WAP using spyder IDE. Use math library. Print number of options you have to select 20 students out of 60 without repeatitions. ( Obviously here order doesn't matter, so find combinations) 
+ans: import math
+     math.comb(60,20)
+Q16. WAP using spyder IDE. Use math library. Try to find log of zero. Which error is given ? 
+     Also try to find square root of any negative number. What error is give?
+ans: 1.import math
+       print(math.log(0))
+       ValueError                                Traceback (most recent call last)
+       Cell In[1], line 2
+       1 import math
+       ----> 2 print(math.log(0))
+       ValueError: math domain error
+     2.import math
+       print(math.sqrt(-2))   
+       ValueError                                Traceback (most recent call last)
+       Cell In[2], line 2
+       1 import math
+       ----> 2 print(math.sqrt(-2))
+       ValueError: math domain error
+Q17. WAP to create a variable v1 and store any number. Find the square root of that number by using v1 in math.sqrt() function.
+ans: import math
+     var1=2
+     print(math.sqrt(var1))
+     output:
+     1.4142135623730951
+Q18. Why python is considered as slow compared to C, C++ ?
+ans: Python is a scripting language while C is a programming language. C/C++ is relatively fast as compared to 
+     Python because when you run the Python script, its interpreter will interpret the script line by line and generate output but in C, 
+     the compiler will first compile it and generate an output which is optimized with respect to the hardware.
+Q19. What are different extensions supported by python?
+     What is meaning of .py , .pyc, .pyz, .pyo, .pyd , etc extensions supported by python ?
+ans:.py: This is normally the input source code that you've written.
+    .pyc: This is the compiled bytecode. If you import a module, python will build a *.pyc file that contains the bytecode 
+          to make importing it again later easier (and faster).
+    .pyo: This was a file format used before Python 3.5 for *.pyc files that were created with optimizations (-O) flag. (see the note below)
+    .pyd: This is basically a windows dll file. http://docs.python.org/faq/windows.html#is-a-pyd-file-the-same-as-a-dll
+    .pyz: The terminology “Python Zip Application” will be the formal term used for a zip-format archive that contains
+          Python code in a form that can be directly executed by Python (specifically,it must have a __main__.py file 
+          in the root directory of the archive). The extension.pyz will be formally associated with such files.
