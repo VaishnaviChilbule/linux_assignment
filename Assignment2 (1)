@@ -1,0 +1,135 @@
+446  touch song{1..6}.mp3
+  447  ls 
+  448  touch snap{1..6}.jpg
+  449  ls
+  450  ls -l
+  451  clear
+  452  touch film{1..6}.avi
+  453  ls
+ mv song{1..6}.mp3 ~/Music
+  459  ls
+  460  cd Music
+  461  ls 
+  462  cd ..
+  463  pwd
+  464  clear
+  465  ls -l
+  466  clear
+  467  ls
+  468  mv snap{1..6}.jpg ~/Pictures
+  469  ls
+  470  ls Pictures
+  471  mv film{1..6}.avi ~/Videos
+  472  ls
+  473  ls Videos
+  474  pwd
+  475  mkdir Friends
+  476  ls
+  477  mkdir Family
+  478  ls
+  479  mkdir Work
+  480  ls
+  481  clear
+  482  ls
+  483  cd Music
+  484  ls
+  485  mv song{1..2}.mp3 ~/Friends
+  486  ls
+  487  cd ..
+  488  cd Friends 
+  489  ls
+  490  clear
+  491  cd ..
+  492  clear
+  493  cd Pictures
+  494  ls
+ cp snap{1..2}.jpg /home/ag01/Friends
+  602  ls
+  603  cd ..
+  604  ls Friends
+  605  cd Pictures
+  606  cp snap{3..4}.jpg /home/ag01/Family
+  607  cd ..
+  608  ls Family
+  609  cd Pictures
+  610  cp snap{5..6}.jpg /home/ag01/Work
+  611  cd ..
+  612  ls Work
+  613  clear
+  614  ls 
+  615  cd Music
+  616  ls
+  617  cp song{1..2}.mp3 /home/ag01/Friends
+  618  cp song{3..4}.mp3 /home/ag01/Family
+  619  cp song{5..6}.mp3 /home/ag01/Work
+  620  cd ..
+  621  ls Friends
+  622  ls Family
+  623  ls Work
+  624  clear
+  625  cd Videos
+  626  ls
+  627  cd ..
+  628  ls Friends
+  629  cd Videos
+  630  cp film{1..2}.avi /home/ag01/Friends
+  631  cp film{3..4}.avi /home/ag01/Family
+  632  cp film{5..6}.avi /home/ag01/work
+  633  cp film{5..6}.avi /home/ag01/Work
+  634  ls 
+  635  cd ..
+  636  ls Family
+  637  ls Friends
+  638  ls Work
+  639  clear
+  640  cd Family
+  rm *.avi *.jpg *.mp3
+  643  ls
+  644  cd ..
+  645  ls
+  646  rmdir Friends
+  647  rm -r Friends
+  648  ls
+  649  clear
+  650  sudo addgroup dac
+  651  sudo addgroup dbda
+  652  sudo addgroup ditiss
+  653  tail /etc/group
+  654  clear
+  655  tail /etc/group
+  656  clear
+  657  sudo adduser Tom --gid 1005
+  658  sudo adduser tom  --gid 1005
+  659  tail /etc/passwd
+  660  clear
+  661  sudo adduser bob --gid 1006
+  662  tail /etc/passwd
+  663  clear
+  664  sudo adduser sam --gid 1007
+  665  tail /etc/passwd
+  666  clear
+  667  sudo adduser prince
+  668  tail /etc/passwd
+  669  tail /etc/group
+  670  clear
+  671  su prince
+  672  cd /tmp/IACSD
+  673  clear
+  674  su prince
+  675  cd ~
+  676  poweroff
+  677  clear
+  678  sudo -s
+  679  whoami
+  680  cd ..
+  681  pwd
+  682  cd ~
+  683  pwd
+  684  sudo chown tom project1.txt
+  685  su prince
+-rwxrw-r-- 1 tom    prince 0 Sep 11 13:09 project1.txt
+-rw-rw-r-- 1 prince dac    0 Sep 11 13:09 project2.txt
+-rw------- 1 tom    prince 0 Sep 11 13:09 project3.txt
+-rw-rwxr-- 1 prince dbda   0 Sep 11 13:09 project4.txt
+
+

@@ -1,0 +1,141 @@
+sudo addgroup one
+sudo addgroup two
+sudo addgroup three
+  327  sudo addgroup four
+ 
+  330  sudo adduser apple --gid 1001
+  331  sudo adduser banana --gid 1001
+  332  clear
+  333  sudo adduser cat --gid 1001
+  334  sudo adduser dog --gid 1001
+  335  clear
+  336  sudo adduser elephant --gid 1001
+  337  clear
+  338  tail /etc/passwd
+  339  clear
+  340  sudo adduser fish --gid 1002
+  341  sudo adduser gun --gid 1002
+  342  clear
+  343  sudo adduser horse --gid 1002
+  344  sudo adduser icecream --gid 1002
+  345  Y
+  346  clear
+  347  tail /etc/passwd
+  348  clear
+  349  sudo adduser jelly --gid 1003
+  350  sudo adduser kitkat --gid 1003
+  351  clear
+  352  sudo adduser lollipop --gid 1003
+  353  sudo adduser marshmallow --gid 1003
+  354  clear
+  355  tail /etc/passwd
+  356  clear
+  357  sudo adduser new --gid 1004
+  358  sudo adduser oppo --gid 1004
+  359  clear
+  360  sudo adduser vivo --gid 1004
+  361  sudo adduser china --gid 1004
+  362  clear
+  363  tail /etc/passwd
+  364  clear
+  365  whereami
+  366  whoami
+  367  pwd
+  368  cd ..
+  369  clear
+  370  mkdir EVERYONE
+  371  sudo mkdir EVERYONE
+  372  ls
+  373  ls -l EVERYONE
+  374  ls -l 
+  375  sudo chmod 777 EVERYONE
+  376  clear
+  377  ls -l
+  378  clear
+  379  ls -l
+  380  clear
+  381  cd apple
+  382  cd ag01
+  383  clear
+  384  cd apple
+  385  ls -l
+  386  clear
+  387  cd home
+  388  cd ..
+  389  clear
+  390  ls -l
+  391  sudo cd apple
+  392  clear
+  393  su apple
+  394  cd ~
+  395  pwd
+  396  sudo usermod oppo -g one
+  397  tail /etc/passwd
+  398  clear
+  399  sudo usermod vivo -g two
+  400  tail /etc/groups
+  401  tail /etc/group
+  402  tail /etc/passwd
+  403  clear
+  404  sudo usermod jelly -G sudo
+  405  tail /etc/group
+  406  cat /etc/group
+  407  clear
+  408  sudo usermod kitkat -G sudo
+  409  cat /etc/groups
+  410  cat /etc/group
+  411  clear
+  412  sudo usermod lollipop -G sudo
+  413  cat /etc/group
+  414  clear
+  415  sudo usermod marshmallow -G sudo
+  416  cat /etc/group
+  417  clear
+  418  sudo usermod fish -g one
+  419  tail /etc/passwd
+  420  home /etc/passwd
+  421  head /etc/passwd
+  422  clear
+  423  cat /etc/passwd
+  424  clear
+  425  sudo usermod gun -g one
+  426  cat /etc/passwd
+  427  clear
+  428  sudo usermod fish -g two
+  429  clear
+  430  sudo usermod fish -G one
+  431  cat /etc/groups
+  432  cat /etc/group
+  433  clear
+  434  sudo usermod gun -g two
+  435  cat /etc/passwd
+  436  clear
+  439  clear
+  440  sudo usermod gun -G one
+  441  cat /etc/group
+  
+one:x:1001:fish,gun
+two:x:1002:
+three:x:1003:
+four:x:1004:
+
+apple:x:1001:1001:Apple,,,:/home/apple:/bin/sh
+banana:x:1002:1001:banana,,,:/home/banana:/sbin/nologin
+cat:x:1003:1001:cat,,,:/home/cat:/bin/bash
+dog:x:1004:1001:dog,,,:/home/dog:/bin/bash
+elephant:x:1005:1001:elephant,,,:/home/elephant:/bin/bash
+fish:x:1006:1002:fish,,,:/home/fish:/bin/bash
+gun:x:1007:1002:gun,,,:/home/gun:/bin/bash
+horse:x:1008:1002:horse,,,:/home/horse:/bin/bash
+icecream:x:1009:1002:icecream,,,:/home/icecream:/bin/bash
+jelly:x:1010:1003:jelly,,,:/home/jelly:/bin/bash
+kitkat:x:1011:1003:kitkat,,,:/home/kitkat:/bin/bash
+lollipop:x:1012:1003:lollipop,,,:/home/lollipop:/bin/bash
+marshmallow:x:1013:1003:marshmallow,,,:/home/marshmallow:/bin/bash
+new:x:1014:1004:new,,,:/home/new:/bin/bash
+oppo:x:1015:1001:oppo,,,:/home/oppo:/bin/bash
+vivo:x:1016:1002:vivo,,,:/home/vivo:/bin/bash
+china:x:1017:1004:china,,,:/home/china:/bin/bash
+
+
+
